@@ -5,8 +5,9 @@ class Strawpoll {
     TA.twitch.chat.on('say', (data) => {
       // This should also check to see if the poster is a mod/owner
       if (data.message.match(/!strawpoll http:\/\/strawpoll.me\//)){
-        $("#strawpreview").attr('src', data.message.replace("!strawpoll ","") + "/r");
-        $("#strawpreview").fadeIn();
+        $("#strawpreview")
+          .attr('src', data.message.replace("!strawpoll ","") + "/r")
+          .fadeIn();
       }
 
       if (data.message == "!strawpoll off"){
