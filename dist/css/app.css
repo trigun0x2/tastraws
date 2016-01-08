@@ -1,0 +1,14 @@
+body {
+  font-family: 'Slabo 27px', serif;
+}
+
+.trivia-cont {
+  width: 300px;
+  display: none;
+  padding: 20px;
+  background: white;
+}
+
+.winner-cont {
+  display: none;
+}
